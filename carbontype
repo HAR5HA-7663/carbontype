@@ -1,0 +1,3 @@
+#!/bin/zsh
+# wrapper so you can run: carbontype path/to/notes.txt [--wpm 60]
+exec "$(dirname "$0")/.venv/bin/python" "$(dirname "$0")/carbontype.py" "$@"
